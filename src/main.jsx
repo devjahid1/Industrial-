@@ -11,6 +11,8 @@ import Careers from './components/Careers/Careers';
 import Work from './components/Work/Work';
 import Jobs from './components/Jobs/Jobs';
 import Auth from './AuthProvider/Auth';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path:'/career',
         element:<Careers/>
+      },
+      {
+        path:'/login',
+        element:<Login/>
+      },
+      {
+        path:'/register',
+        element:<Register/>
       },
     ]
   },
