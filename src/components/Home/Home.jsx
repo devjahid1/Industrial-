@@ -14,6 +14,7 @@ import blog2 from "../../assets/image 8.png"
 import blog3 from "../../assets/Mask group.png"
 import profile1 from "../../assets/Ellipse 2549.png"
 import profile2 from "../../assets/Ellipse 2550.png"
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const authInfo = useContext(AuthContext);
@@ -35,9 +36,9 @@ const Home = () => {
             <h1 className="mb-5 text-5xl font-bold">
               It’s All About <span className="text-[#4BA0FF]">Reliability</span>
             </h1>
-            <button className="btn bg-[#4BA0FF] hover:bg-[#4BA0FF] text-white">
+            <Link to='/register' className="btn bg-[#4BA0FF] hover:bg-[#4BA0FF] text-white">
               Join Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -106,7 +107,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-[#083971] lg:w-[300px] lg:h-[388px]">
+        <div className="bg-[#083971]  lg:w-[300px] lg:h-[388px]">
           <div className="mt-[110px]">
           <img className="w-[120px] h-[120px] mx-auto" src={imgs2} alt="" />
           <p className="text-white text-center">RELIABLE <br /><span className="font-bold">OUTCOMES</span> </p>
