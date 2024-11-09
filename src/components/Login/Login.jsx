@@ -27,12 +27,12 @@ const Login = () => {
         signIn(email, password)
             .then(() => {
                 setMessage("Login Successful");
-                clearMessages();  // Clear messages after 5 seconds
+                clearMessages();
             })
             .catch((err) => {
                 setError("Invalid email or password");
                 console.error("Login error:", err);
-                clearMessages();  // Clear error after 5 seconds
+                clearMessages();
             });
     };
 
